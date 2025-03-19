@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Awas Kandang Unggas</title>
+    <link rel="stylesheet" href="../static/styles.css">
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sistem Awas Kandang Unggas</h1>
+            <p>Optimalkan hasil dengan teknologi</p>
+
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">BERANDA</a></li>
+                <li><a href="#">MONITORING</a></li>
+                <li><a href="#">PAKAN</a></li>
+                <li><a href="#">RIWAYAT</a></li>
+                <li><a href="#">PENGATURAN</a></li>
+            </ul>
+        </nav>
+
+        <section class="stats">
+            <div class="stat-card1">
+                <span>Suhu</span>
+                <span>24°C</span><br>
+                <h3>Normal</h3>
+            </div>
+            <div class="stat-card2">
+                <span>Ammonia</span>
+                <span>30%</span><br>
+                <h3> RENDAH</h3>
+            </div>
+            <div class="stat-card3">
+                <span>CO₂ Karbon Dioksida</span>
+                <span>30%</span><br>
+                <h3> NORMAL</h3>
+            </div>
+            <div class="stat-card">
+                <span>Kelembaban</span>
+                <span>60%</span><br>
+                <h3>TINGGI</h3>
+            </div>
+            <div class="stat-card">
+                <span>Oksigen</span>
+                <span>AMAN</span>
+            </div>
+            <div class="stat-card">
+                <span>Karbon Monosida</span>
+                <span>AMAN</span>
+            </div>
+        </section>
+
+        <section class="feed-control">
+            <h2>KONTROL PAKAN OTOMATIS</h2>
+            <div class="schedule">
+                <h3>JADWAL PAKAN</h3>
+                <div class="schedule-item">
+                    <span>07.00 | 2 Kilogram</span>
+                    <span class="status">AKTIF</span>
+                </div>
+                <div class="schedule-item">
+                    <span>12.00 | 1 Kilogram</span>
+                    <span class="status">AKTIF</span>
+                </div>
+                <div class="schedule-item">
+                    <span>17.00 | 2 Kilogram</span>
+                    <span class="status">AKTIF</span>
+                </div>
+            </div>
+            <div class="manual-control">
+                <h3>MANUAL KONTROL</h3>
+                <button>1 Kilogram</button>
+                <button>2 Kilogram</button>
+                <button>5 Kilogram</button>
+            </div>
+            <div class="feed-now">
+                <button>BERI MAKAN SEKARANG</button>
+                <span>PERSEDIAAN PAKAN TERSISA 15 Kilogram</span>
+            </div>
+            <div class="feed-history">
+                <h3>RIWAYAT PAKAN</h3>
+                <span>24 MEI 07.00</span>
+                <span>25 MEI 17.00</span>
+            </div>
+        </section>
+
+        <section class="device-control">
+            <h2>KONTROL PERANGKAT</h2>
+            <div class="device">
+                <span>KIPAS</span>
+                <button class="on">ON</button>
+            </div>
+            <div class="device">
+                <span>FOGGER</span>
+                <button class="off">OFF</button>
+            </div>
+            <div class="device">
+                <span>LAMPU</span>
+                <button class="on">ON</button>
+            </div>
+            <div class="device">
+                <span>SPRINKLERS</span>
+                <button class="off">OFF</button>
+            </div>
+            <div class="device">
+                <span>CHICKEN FEED</span>
+                <button class="on">ON</button>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="containera">
+        <h3>Diagram Produksi Telur per Hari</h3>
+        <canvas id="telurChart"></canvas>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>

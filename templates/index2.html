@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Monitoring</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style2.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Dashboard Monitoring</h1>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <div class="card bg-orange">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Pengguna</h5>
+                        <p class="card-text">1,234</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-orange">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Transaksi</h5>
+                        <p class="card-text">567</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-orange">
+                    <div class="card-body">
+                        <h5 class="card-title">Pendapatan</h5>
+                        <p class="card-text">Rp 12,345,678</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-orange">
+                    <div class="card-body">
+                        <h5 class="card-title">Pengunjung Hari Ini</h5>
+                        <p class="card-text">89</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-8">
+                <div class="card bg-orange">
+                    <div class="card-body">
+                        <h5 class="card-title">Grafik Pengunjung Bulanan</h5>
+                        <canvas id="visitorChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-orange">
+                    <div class="card-body">
+                        <h5 class="card-title">Aktivitas Terbaru</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item">Pengguna A melakukan login</li>
+                            <li class="list-group-item">Transaksi baru sebesar Rp 500,000</li>
+                            <li class="list-group-item">Pengguna B melakukan logout</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card bg-orange">
+                    <div class="card-body">
+                        <h5 class="card-title">Tabel Transaksi Terbaru</h5>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID Transaksi</th>
+                                    <th>Tanggal</th>
+                                    <th>Jumlah</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>12345</td>
+                                    <td>2023-10-01</td>
+                                    <td>Rp 1,000,000</td>
+                                    <td><span class="badge badge-success">Sukses</span></td>
+                                </tr>
+                                <tr>
+                                    <td>12346</td>
+                                    <td>2023-10-02</td>
+                                    <td>Rp 500,000</td>
+                                    <td><span class="badge badge-warning">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td>12347</td>
+                                    <td>2023-10-03</td>
+                                    <td>Rp 750,000</td>
+                                    <td><span class="badge badge-danger">Gagal</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../static/script2.js"></script>
+</body>
+</html>

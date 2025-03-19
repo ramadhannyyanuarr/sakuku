@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff3e0;
+}
+
+.container-fluid {
+    padding: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.bg-orange {
+    background-color: #ff9800;
+    color: white;
+}
+
+.badge {
+    margin-left: 10px;
+}
+
+.list-group-item {
+    background-color: #ffe0b2;
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.table {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    border-top: none;
+}
