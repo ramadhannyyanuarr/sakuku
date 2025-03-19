@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+header input {
+    padding: 10px;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.user-info {
+    margin-top: 10px;
+}
+
+.user-info span {
+    display: block;
+    font-size: 0.9em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.stat-card1 {
+    background-color: gray;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.stat-card2 {
+    background-color: yellow;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.stat-card3 {
+    background-color: red;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.stat-card {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.feed-control {
+    margin-top: 20px;
+}
+
+.schedule, .manual-control, .feed-now, .feed-history {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.status {
+    color: green;
+}
+
+.manual-control button {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.feed-now button {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.device-control {
+    margin-top: 20px;
+}
+
+.device {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.device button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.device button.on {
+    background-color: green;
+}
+
+.device button.off {
+    background-color: red;
+}
+
+.containera {
+    width: 50%; /* Lebih kecil dari sebelumnya */
+    max-width: 400px; /* Lebih kecil dari sebelumnya */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    align:center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#telurChart {
+    width: 100% !important; /* Pastikan canvas mengikuti ukuran container */
+    height: auto !important;
+}
+
